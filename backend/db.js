@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const mongoURI = 'mongodb+srv://pretishasahoo:pretisha@cluster0.u5eww0z.mongodb.net/mynotebookdatabase?retryWrites=true&w=majority'; // Replace with your actual MongoDB URI use ip of local host instead else it causes error
+const mongoURI = process.env.MONGO_URI; 
 
 const connectToMongo = async () => {
   try {
